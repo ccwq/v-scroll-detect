@@ -7,7 +7,7 @@ export type ScrollDetectOptions = string | {
   horizontal?: string;
 };
 
-export declare const vScrollDetect: Directive<HTMLElement, ScrollDetectOptions>;
+export declare const vScrollDetect: Directive<HTMLElement, ScrollDetectOptions | void>;
 
 declare const _default: {
   install: (app: App) => void;
