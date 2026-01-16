@@ -71,7 +71,7 @@ describe('v-scroll-detect 指令测试', () => {
     // 触发回调
     MockResizeObserver.instances[0].trigger([]);
 
-    expect(el.classList.contains('is-scrollable')).toBe(true);
+    expect(el.classList.contains('with-scroll')).toBe(true);
   });
 
   it('当存在滚动条时应该添加默认类名', async () => {
@@ -90,13 +90,13 @@ describe('v-scroll-detect 指令测试', () => {
     // 手动触发 ResizeObserver 回调
     MockResizeObserver.instances[0].trigger([]);
     
-    // 检查是否添加了默认类名 'is-scrollable'
-    expect(el.classList.contains('is-scrollable')).toBe(true);
+    // 检查是否添加了默认类名 'with-scroll'
+    expect(el.classList.contains('with-scroll')).toBe(true);
   });
 
   it('当没有滚动条时应该移除类名', async () => {
     const wrapper = mount({
-      template: '<div v-scroll-detect class="is-scrollable"></div>',
+      template: '<div v-scroll-detect class="with-scroll"></div>',
       directives: {
         scrollDetect: vScrollDetect,
       },
@@ -110,7 +110,7 @@ describe('v-scroll-detect 指令测试', () => {
     // 触发回调
     MockResizeObserver.instances[0].trigger([]);
 
-    expect(el.classList.contains('is-scrollable')).toBe(false);
+    expect(el.classList.contains('with-scroll')).toBe(false);
   });
 
   it('应该支持自定义字符串类名', async () => {

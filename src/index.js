@@ -5,9 +5,9 @@
  */
 export const vScrollDetect = {
   mounted(el, binding) {
-    // Get user custom class name, default is 'is-scrollable'
-    // 获取用户自定义的类名，默认为 'is-scrollable'
-    const className = binding.value || 'is-scrollable';
+    // Get user custom class name, default is 'with-scroll'
+    // 获取用户自定义的类名，默认为 'with-scroll'
+    const className = binding.value || 'with-scroll';
 
     // Define detection logic
     // 定义检测逻辑

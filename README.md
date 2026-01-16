@@ -71,7 +71,7 @@ import { vScrollDetect } from 'v-scroll-detect';
 ### Options
 
 0. **No Parameters (Default Mode)**
-   Just use `v-scroll-detect`. It will add the default class `is-scrollable` when any scrollbar appears.
+   Just use `v-scroll-detect`. It will add the default class `with-scroll` when any scrollbar appears.
 
    ```html
    <div v-scroll-detect>...</div>
@@ -81,7 +81,7 @@ import { vScrollDetect } from 'v-scroll-detect';
    Pass a class name string. It will be added when *any* scrollbar appears.
    
    ```html
-   <div v-scroll-detect="'is-scrollable'">...</div>
+   <div v-scroll-detect="'with-scroll'">...</div>
    ```
 
 2. **Object (Advanced Mode)**
@@ -165,7 +165,7 @@ import { vScrollDetect } from 'v-scroll-detect';
 ### 配置选项
 
 0. **不传参数 (默认模式)**
-   直接使用 `v-scroll-detect`。当出现任意滚动条时，会自动添加默认类名 `is-scrollable`。
+   直接使用 `v-scroll-detect`。当出现任意滚动条时，会自动添加默认类名 `with-scroll`。
 
    ```html
    <div v-scroll-detect>...</div>
@@ -175,7 +175,7 @@ import { vScrollDetect } from 'v-scroll-detect';
    传入一个类名字符串。当出现*任意*滚动条时，该类名会被添加。
    
    ```html
-   <div v-scroll-detect="'is-scrollable'">...</div>
+   <div v-scroll-detect="'with-scroll'">...</div>
    ```
 
 2. **对象 (进阶模式)**
