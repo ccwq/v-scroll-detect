@@ -68,6 +68,36 @@ import { vScrollDetect } from 'v-scroll-detect';
 </template>
 ```
 
+#### Vanilla JS
+
+```javascript
+import { createScrollDetector } from 'v-scroll-detect';
+
+const el = document.querySelector('.my-container');
+const detector = createScrollDetector(el, 'has-scroll');
+
+// To clean up
+// detector.destroy();
+```
+
+#### React
+
+```jsx
+import { useRef } from 'react';
+import { useScrollDetect } from 'v-scroll-detect/react';
+
+function MyComponent() {
+  const scrollRef = useRef(null);
+  useScrollDetect(scrollRef, 'with-scroll');
+
+  return (
+    <div ref={scrollRef}>
+      {/* content */}
+    </div>
+  );
+}
+```
+
 ### Options
 
 0. **No Parameters (Default Mode)**
@@ -160,6 +190,36 @@ import { vScrollDetect } from 'v-scroll-detect';
     <!-- 内容 -->
   </div>
 </template>
+```
+
+#### 原生 JavaScript (Vanilla JS)
+
+```javascript
+import { createScrollDetector } from 'v-scroll-detect';
+
+const el = document.querySelector('.my-container');
+const detector = createScrollDetector(el, 'has-scroll');
+
+// 销毁监听
+// detector.destroy();
+```
+
+#### React
+
+```jsx
+import { useRef } from 'react';
+import { useScrollDetect } from 'v-scroll-detect/react';
+
+function MyComponent() {
+  const scrollRef = useRef(null);
+  useScrollDetect(scrollRef, 'with-scroll');
+
+  return (
+    <div ref={scrollRef}>
+      {/* 内容 */}
+    </div>
+  );
+}
 ```
 
 ### 配置选项

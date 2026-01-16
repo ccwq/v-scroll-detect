@@ -5,6 +5,11 @@
   "main": "src/index.js",
   "module": "src/index.js",
   "types": "src/index.d.ts",
+  "exports": {
+    ".": "./src/index.js",
+    "./react": "./src/react.js",
+    "./core": "./src/core.js"
+  },
   "scripts": {
     "test": "vitest run"
   },
@@ -27,7 +32,16 @@
   },
   "homepage": "https://github.com/ccwq/v-scroll-detect#readme",
   "peerDependencies": {
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
   },
   "files": [
     "src",
