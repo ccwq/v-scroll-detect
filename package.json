@@ -1,0 +1,29 @@
+{
+  "name": "v-scroll-detect",
+  "version": "1.0.0",
+  "description": "A Vue directive to automatically detect scrollbars and toggle classes. | 一个自动检测滚动条并切换样式的 Vue 指令。",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "directive",
+    "scroll",
+    "detect",
+    "resize-observer",
+    "ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
+}
